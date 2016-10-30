@@ -1,47 +1,22 @@
-const view_object = require('./view_object/updateUI.js')
+const controller = require('./controller_object/controller.js')
 
 $(document).ready(function() {
-  // let dice = new Dice()
-
   Dice.btnAddClicked()
 
   Dice.btnRollClicked()
 })
 
 class Dice {
-  // constructor(name){
-  //   this.name = name || null
-  // }
-
   // =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
   // button : Add Dice!
   //=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
-  static btnAddClicked (){
-    $('#roller button.add').on('click', function() {
-      // Dice.updateUIDice()
-      view_object.updateUIDice
-    })
+  static btnAddClicked () {
+    controller.addDice()
   }
-
-  // static updateUIDice (){
-  //   console.log("WAT")
-  //   return $('.dice').append('<div class="die">0</div>')
-  // }
-
   // =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
   // buttpm : Roll Dice!
   //=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
-  static btnRollClicked (){
-    $('#roller button.roll').on('click', function() {
-      Dice.updateUIDiceValue()
-    })
+  static btnRollClicked () {
+    controller.updateDiceValue()
   }
-
-  static updateUIDiceValue () {
-    $('.die').each(function(k, die) {
-      var value = Math.floor((Math.random()*6)+1)
-      $(die).text(value)
-    })
-  }
-
 }

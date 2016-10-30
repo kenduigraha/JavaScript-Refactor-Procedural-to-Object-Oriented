@@ -49,10 +49,43 @@ $(document).ready(function() {
 })
 ```
 
+## Dependencies
+1. [node.js](nodejs.org)
+2. express framework
+3. nodemon
+4. jQuery
+5. webpack
+
+## Button Action
+| Button | Action |
+|--------|--------|
+| Add Dice! | Generate new dice with 0 value |
+| Roll Dice! | Generate new dice's value in exist dices |
+
+
 ## Tree Structure
 
 ```
+.
+├── README.md
+├── app.js
+├── bin
+│   └── www
+├── package.json
+├── public
+│   ├── images
+│   ├── javascripts
+│   └── stylesheets
+├── routes
+│   ├── index.js
+│   └── users.js
+└── views
+    ├── error.jade
+    ├── footer.jade
+    ├── index.jade
+    └── layout.jade
 
+7 directories, 10 files
 ```
 
 ## Contributor
