@@ -1,3 +1,5 @@
+const view_object = require('./view_object/updateUI.js')
+
 $(document).ready(function() {
   // let dice = new Dice()
 
@@ -16,14 +18,15 @@ class Dice {
   //=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
   static btnAddClicked (){
     $('#roller button.add').on('click', function() {
-      Dice.updateUIDice()
+      // Dice.updateUIDice()
+      view_object.updateUIDice
     })
   }
 
-  static updateUIDice (){
-    console.log("WAT")
-    return $('.dice').append('<div class="die">0</div>')
-  }
+  // static updateUIDice (){
+  //   console.log("WAT")
+  //   return $('.dice').append('<div class="die">0</div>')
+  // }
 
   // =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
   // buttpm : Roll Dice!
