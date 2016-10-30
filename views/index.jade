@@ -1,9 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  #roller
-    button.add Add dice!
-    button.roll Roll dice!
-    .dice
+  .container
+    h1= title
+    p Welcome to #{title}
+    #roller
+      button.add.btn-primary Add dice!
+      button.roll.btn-warning Roll dice!
+      .dice
