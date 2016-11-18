@@ -1,5 +1,10 @@
 # JavaScript Refactor Procedural to Object-Oriented
 
+## How to Run
+1. `npm install`
+2. `npm start`
+3. go to http://localhost:3000
+
 ## Introduction
 Refactor from javascript procedural programming into javascript object oriented programming using node.js and express framework
 
